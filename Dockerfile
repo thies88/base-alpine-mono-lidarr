@@ -17,7 +17,7 @@ RUN apk update && \
 echo "**** install packages ****" && \
 apk add --no-cache tar curl && \
 echo "**** install lidarr packages ****" && \
-apk add --no-cache jq libmediainfo && \
+apk add --no-cache jq libmediainfo chromaprint && \
 echo "**** install lidarr ****" && \
 mkdir -p /app/lidarr && \
  if [ -z ${LIDARR_RELEASE+x} ]; then \
